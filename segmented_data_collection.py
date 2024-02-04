@@ -5,12 +5,12 @@ import math
 import time
 import os
 
-cap = cv.VideoCapture(r"nov_update/subject1/static/U/U.mp4")
+cap = cv.VideoCapture(0)
 detector = HandDetector(detectionCon=0.8, maxHands=2)
 offset = 125
 offset1= 20
 imgSize = 300
-folder = "nov_update/subject1/static/U/type2"
+folder = "any_folder"
 counter = 0
 lower_threshold = np.array([0, 48, 80], dtype=np.uint8)
 upper_threshold = np.array([20, 255, 255], dtype=np.uint8)
